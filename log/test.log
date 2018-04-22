@@ -206,3 +206,6 @@ Started GET "/posts/1" for 127.0.0.1 at 2018-04-22 20:08:47 +0000
 Started GET "/posts/1" for 127.0.0.1 at 2018-04-22 20:12:15 +0000
 Processing by PostsController#show as HTML
   Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
